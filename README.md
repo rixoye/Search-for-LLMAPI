@@ -1,4 +1,4 @@
-# DeepSeek2Chatbox | 让思考过程可见的硅基R1
+# DeepSeek2Chatbox | 让思考过程可见的硅基R1 | [EN](https://github.com/chadyi/DeepSeek2Chatbox/blob/main/README_EN.md)
 
 一个轻量级的API转发服务，让你在Chatbox中看到DeepSeek模型的完整思考过程。
 
