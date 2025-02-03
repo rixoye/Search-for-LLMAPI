@@ -1,4 +1,4 @@
-# DeepSeek2Chatbox | 让思考过程可见的R1 | [EN](https://github.com/chadyi/DeepSeek2Chatbox/blob/main/README_EN.md)
+# DeepSeek2Chatbox | 让思考过程可见的R1 | [EN](README_EN.md)
 
 一个轻量级的API转发服务，让你在Chatbox中看到DeepSeek模型的完整思考过程。
 
@@ -30,7 +30,7 @@
    python server.py
    ```
 4. 部署到服务器并添加SSL
-5. 在Chatbox中使用：`http://你的域名:5000/v1`
+5. 在Chatbox中使用：`https://你的域名/v1`
 
 ## 效果展示
 你将看到这样的输出：
@@ -42,6 +42,7 @@
 - 🧠 思维可见：让AI的思考过程不再是黑盒
 - 🎯 即插即用：完全兼容Chatbox
 - 🪶 轻量简单：无需复杂配置
+- 🧹 自动清理：历史记录中的思考过程会被自动清理，保持对话整洁
 
 ## 问题反馈
 遇到问题？欢迎提交Issue或联系作者。
