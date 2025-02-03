@@ -29,7 +29,8 @@ This change made Chatbox unable to display the model's reasoning process. This p
    ```bash
    python server.py
    ```
-4. Use in Chatbox: `http://localhost:5000/v1`
+4. Deploy to server and add SSL
+5. Use in Chatbox: `http://your domain name:5000/v1`
 
 ## Demo
 You'll see output like this:
