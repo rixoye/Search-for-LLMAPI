@@ -1,12 +1,24 @@
 from flask import Flask, request, Response, stream_with_context
 import requests
 import json
+import re
 
 app = Flask(__name__)
 
 @app.route('/v1/chat/completions', methods=['POST'])
 def chat_completions():
     user_data = request.json
+    
+    if 'messages' in user_data:
+        cleaned_messages = []
+        for msg in user_data['messages']:
+            content = msg.get('content', '')
+            cleaned_content = re.sub(r'<think>.*?</think>\s*\n*', '', content, flags=re.DOTALL)
+            cleaned_msg = msg.copy()
+            cleaned_msg['content'] = cleaned_content.strip()
+            cleaned_messages.append(cleaned_msg)
+        user_data['messages'] = cleaned_messages
+    
     headers = {
         "Authorization": request.headers.get('Authorization'),
         "Content-Type": "application/json"
@@ -23,8 +35,8 @@ def chat_completions():
     )
     
     def generate():
-        is_first_reasoning = True
-        last_was_reasoning = False
+        is_first_reasoning = True  
+        last_was_reasoning = False 
         
         for line in response.iter_lines():
             if line:
@@ -50,9 +62,9 @@ def chat_completions():
                         if 'delta' in choice:
                             delta = choice['delta']
                             
+                            # 处理reasoning_content
                             reasoning = delta.get('reasoning_content', '')
                             if reasoning:
-                                # 添加开始标签
                                 if is_first_reasoning:
                                     modified_data = {
                                         'choices': [{
@@ -64,6 +76,7 @@ def chat_completions():
                                     yield f"data: {json.dumps(modified_data)}\n\n"
                                     is_first_reasoning = False
                                 
+                                # 输出reasoning内容
                                 modified_data = {
                                     'choices': [{
                                         'delta': {
@@ -74,9 +87,9 @@ def chat_completions():
                                 yield f"data: {json.dumps(modified_data)}\n\n"
                                 last_was_reasoning = True
                             
+                            # 处理content
                             content = delta.get('content', '')
                             if content:
-                                # 添加结束标签
                                 if last_was_reasoning:
                                     modified_data = {
                                         'choices': [{
@@ -105,4 +118,4 @@ def chat_completions():
     )
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=5000) 
+    app.run(debug=True,host='0.0.0.0', port=9006) 
