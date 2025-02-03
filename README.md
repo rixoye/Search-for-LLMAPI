@@ -29,7 +29,8 @@
    ```bash
    python server.py
    ```
-4. 在Chatbox中使用：`http://localhost:5000/v1`
+4. 部署到服务器并添加SSL
+5. 在Chatbox中使用：`http://你的域名:5000/v1`
 
 ## 效果展示
 你将看到这样的输出：
