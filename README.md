@@ -16,7 +16,9 @@
 2. 填写配置：
    - 名称：任意（如：DeepSeek-R1）
    - 模型：deepseek-ai/DeepSeek-R1
-   - API地址：`https://deepseek2chatbox.dawne.cn/v1` (不要出现两个v1)
+   - API地址：
+     - 基础版：`https://deepseek2chatbox.dawne.cn/v1`
+     - 搜索版：`https://deepseek2chatbox.dawne.cn/v1/chat/completions/with-search`
    - API Key：你的硅基流动API Key（以sk-开头）
 
 ### 方式二：自行部署
@@ -30,19 +32,43 @@
    python server.py
    ```
 4. 部署到服务器并添加SSL
-5. 在Chatbox中使用：`https://你的域名/v1`
+5. 在Chatbox中使用：`https://你的域名/v1`或`https://你的域名/v1/chat/completions/with-search`
 
-## 效果展示
-你将看到这样的输出：
+## 功能特点
 
-![image](https://github.com/user-attachments/assets/b2003a8a-8839-4b30-b95f-31ca22a89a89)
-
-## 特点
+### 基础功能
 - 🔄 实时转发：无延迟，所见即所得
 - 🧠 思维可见：让AI的思考过程不再是黑盒
 - 🎯 即插即用：完全兼容Chatbox
 - 🪶 轻量简单：无需复杂配置
 - 🧹 自动清理：历史记录中的思考过程会被自动清理，保持对话整洁
+
+### 搜索增强（新）
+- 🔍 智能搜索：使用GLM-4优化搜索关键词
+- 📚 实时资讯：自动获取相关网络信息
+- 🤖 上下文感知：考虑对话历史优化搜索
+- 🎯 精准回答：基于搜索结果提供更准确的回答
+
+## 效果展示
+
+### 基础对话
+![基础对话效果](https://github.com/user-attachments/assets/b2003a8a-8839-4b30-b95f-31ca22a89a89)
+
+### 搜索增强对话
+```
+用户：openai最近有什么新功能？
+
+[搜索结果]
+- [OpenAI推出ChatGPT新功能Tasks 助力用户高效管理生活](https://news.pconline.com.cn/1869/18699469.html)
+- [报道称OpenAI即将推出ChatGPT新功能：自动搞定餐厅预订和旅行规划](https://finance.sina.com.cn/world/2025-01-23/doc-inefxarn5053654.shtml)
+...
+
+<think>
+[模型思考过程]
+</think>
+
+[模型基于搜索结果的回答]
+```
 
 ## 问题反馈
 遇到问题？欢迎提交Issue或联系作者。
