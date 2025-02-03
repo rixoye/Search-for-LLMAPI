@@ -1,6 +1,6 @@
 # DeepSeek2Chatbox | 让思考过程可见的R1 | [EN](README_EN.md)
 
-一个轻量级的API转发服务，让你在Chatbox中看到DeepSeek模型的完整思考过程。
+一个轻量级的API转发服务，让你在Chatbox中看到DeepSeek模型的完整思考过程。并删去历史对话中的推理过程，节约token。
 
 ## 这是什么？
 硅基流动最近将API接口升级为DeepSeek官方格式，响应被分为两部分：
