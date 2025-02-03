@@ -1,0 +1,2 @@
+# DeepSeek2Chatbox
+一个轻量级的API转发服务，让你在Chatbox中看到DeepSeek模型的完整思考过程。
