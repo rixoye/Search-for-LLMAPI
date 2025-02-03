@@ -16,7 +16,7 @@
 2. 填写配置：
    - 名称：任意（如：DeepSeek-R1）
    - 模型：deepseek-ai/DeepSeek-R1
-   - API地址：`https://deepseek2chatbox.dawne.cn/v1`
+   - API地址：`https://deepseek2chatbox.dawne.cn/v1` (不要出现两个v1)
    - API Key：你的硅基流动API Key（以sk-开头）
 
 ### 方式二：自行部署
