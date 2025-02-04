@@ -18,7 +18,7 @@
    - 模型：deepseek-ai/DeepSeek-R1
    - API地址：
      - 基础版：`https://deepseek2chatbox.dawne.cn/v1`
-     - 搜索版：`https://deepseek2chatbox.dawne.cn/v1/chat/completions/with-search`
+     - 搜索版：`https://deepseek2chatbox.dawne.cn/with-search/v1/chat/completions`
    - API Key：你的硅基流动API Key（以sk-开头）
 
 ### 方式二：自行部署
