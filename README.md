@@ -21,7 +21,7 @@
      - 搜索版：`https://deepseek2chatbox.dawne.cn/with-search/v1/chat/completions`
    - API Key：你的硅基流动API Key（以sk-开头）
 
-### 方式二：自行部署
+### 方式二：自行部署(基础功能)
 1. 克隆仓库
 2. 安装依赖：
    ```bash
