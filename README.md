@@ -41,10 +41,6 @@
 4. 部署到服务器并添加SSL
 5. 在Chatbox中使用：`https://你的域名/v1`或`https://你的域名/v1/chat/completions/with-search`
 
-## 效果展示
-
-![image](https://github.com/user-attachments/assets/43447fc6-0c70-4db9-84ca-7e393603abed)
-
 ## 问题反馈
 遇到问题？欢迎提交Issue或联系作者。
 
