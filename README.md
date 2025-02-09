@@ -21,8 +21,8 @@
 ### 方式一：直接使用
 1. 在客户端中（如 Chatbox）添加新对话模型
 2. 填写配置：
-   - API地址：`https://search-for-llmapi.dawne.cn/with-search/v1/chat/completions`
-   - 不带搜索版 API地址：`https://search-for-llmapi.dawne.cn/v1/chat/completions`
+   - API地址：`https://search-for-llmapi.dawne.cn/with-search/v1`
+   - 不带搜索版 API地址：`https://search-for-llmapi.dawne.cn/v1`
    - API Key：你的模型平台 API Key（如硅基流动的 sk-xxx）
    - 模型：`平台@模型名`（如：`siliconflow@deepseek-ai/deepseek-coder-33b-instruct`）
    - 具体请看 https://eqrwxrl391e.feishu.cn/wiki/TEwxweXOOi5I2lk60VocY9QOnob
