@@ -25,6 +25,7 @@
    - 不带搜索版 API地址：`https://search-for-llmapi.dawne.cn/v1/chat/completions`
    - API Key：你的模型平台 API Key（如硅基流动的 sk-xxx）
    - 模型：`平台@模型名`（如：`siliconflow@deepseek-ai/deepseek-coder-33b-instruct`）
+   - 具体请看 https://eqrwxrl391e.feishu.cn/wiki/TEwxweXOOi5I2lk60VocY9QOnob
 
 
 ### 方式二：自行部署(完善中)
