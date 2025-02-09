@@ -19,16 +19,14 @@
 ## 开始使用
 
 ### 方式一：直接使用
-1. 打开Chatbox，添加新对话模型
+1. 在客户端中（如 Chatbox）添加新对话模型
 2. 填写配置：
-   - 名称：任意（如：DeepSeek-R1）
-   - 模型：deepseek-ai/DeepSeek-R1
-   - API地址：
-     - 基础版：`https://deepseek2chatbox.dawne.cn/v1`
-     - 搜索版：`https://deepseek2chatbox.dawne.cn/with-search/v1/chat/completions`
-   - API Key：你的硅基流动API Key（以sk-开头）
+   - API地址：`https://search-for-llmapi.dawne.cn/with-search/v1/chat/completions`
+   - API Key：你的模型平台 API Key（如硅基流动的 sk-xxx）
+   - 模型：`平台@模型名`（如：`siliconflow@deepseek-ai/deepseek-coder-33b-instruct`）
 
-### 方式二：自行部署(基础功能)
+
+### 方式二：自行部署(完善中)
 1. 克隆仓库
 2. 安装依赖：
    ```bash
