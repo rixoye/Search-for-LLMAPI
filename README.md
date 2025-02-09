@@ -47,3 +47,7 @@
 
 ## 问题反馈
 遇到问题？欢迎提交Issue或联系作者。
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=chadyi/DeepSeek2Chatbox,chadyi/Search-for-LLMAPI&type=Date)](https://star-history.com/#chadyi/DeepSeek2Chatbox&chadyi/Search-for-LLMAPI&Date)
