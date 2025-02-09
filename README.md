@@ -50,4 +50,4 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=chadyi/DeepSeek2Chatbox,chadyi/Search-for-LLMAPI&type=Date)](https://star-history.com/#chadyi/DeepSeek2Chatbox&chadyi/Search-for-LLMAPI&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=chadyi/Search-for-LLMAPI&type=Date)](https://star-history.com/#chadyi/Search-for-LLMAPI&Date)
