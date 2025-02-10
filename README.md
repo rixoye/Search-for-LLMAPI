@@ -36,7 +36,7 @@
    ```
 3. 启动服务：
    ```bash
-   python server.py
+   python sever.py
    ```
 4. 部署到服务器并添加SSL
 5. 在Chatbox中使用：`https://你的域名/v1`或`https://你的域名/v1/chat/completions/with-search`
